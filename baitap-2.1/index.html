@@ -2,45 +2,29 @@
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
-  <title>Bài 2.3 - Căn chỉnh hình ảnh</title>
+  <title>Bài 2.2 - Hình ảnh bo góc</title>
   <style>
-    .container {
-      width: 600px;
-      border: 1px solid #ccc;
-      padding: 10px;
-      margin-bottom: 20px;
-    }
-    .left {
-      text-align: left;
-    }
-    .center {
-      text-align: center;
-    }
-    .right {
-      text-align: right;
-    }
     img {
-      width: 120px;
+      width: 150px;
+      height: 150px;
+      margin: 10px;
+    }
+    .rounded {
+      border-radius: 15px;
+    }
+    .circle {
+      border-radius: 50%;
+    }
+    .square {
+      border-radius: 0;
+      border: 2px solid #333;
     }
   </style>
 </head>
 <body>
-  <h2>Bài 2.3: Căn chỉnh hình ảnh</h2>
-
-  <div class="container left">
-    <p>Left alignment (mặc định):</p>
-    <img src="https://via.placeholder.com/120" alt="Left aligned">
-  </div>
-
-  <div class="container center">
-    <p>Center alignment:</p>
-    <img src="https://via.placeholder.com/120" alt="Center aligned">
-  </div>
-
-  <div class="container right">
-    <p>Right alignment:</p>
-    <img src="https://via.placeholder.com/120" alt="Right aligned">
-  </div>
-
+  <h2>Bài 2.2: Hiển thị 3 hình ảnh với hiệu ứng bo góc khác nhau</h2>
+  <img src="https://via.placeholder.com/150" class="rounded" alt="Rounded">
+  <img src="https://via.placeholder.com/150" class="circle" alt="Circle">
+  <img src="https://via.placeholder.com/150" class="square" alt="Square">
 </body>
 </html>
