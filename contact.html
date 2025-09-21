@@ -230,5 +230,14 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    document.getElementById('themeToggle').addEventListener('click', ()=>{
+      const html = document.documentElement;
+      const isLight = html.getAttribute('data-bs-theme') !== 'dark';
+      html.setAttribute('data-bs-theme', isLight ? 'dark' : 'light');
+      document.getElementById('themeToggle').innerHTML = 
+        isLight ? '<i class="bi bi-brightness-high"></i>' : '<i class="bi bi-moon-stars"></i>';
+    });
+  </script>
 </body>
 </html>
